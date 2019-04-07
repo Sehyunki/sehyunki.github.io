@@ -1,0 +1,57 @@
+.size{
+	width: 150px;
+	height: 150px;
+}
+
+.logo-ani {
+	color: red;
+	transform: translateY(0);
+	animation-name: amimateLogo;
+  	animation-duration: 1s;
+  	animation-iteration-count: infinite;
+}
+
+.logo-ani-1 {
+	animation-delay: 50ms;
+}
+
+.logo-ani-2 {
+	animation-delay: 100ms;
+}
+
+@keyframes amimateLogo {
+  from {
+  	color: blue;
+  }
+  to {
+  	color: purple;
+  }
+}
+
+@keyframes wiggle {
+	from 
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+   to 
+  100% { transform: rotate(0deg); }
+}
+
+h1.wiggle {
+  display: inline-block;
+  animation: wiggle 2.5s infinite;
+}
+
+h1.wiggle:hover {
+  animation: none;
+}
+
+
+
+
+
+
+
+
+
